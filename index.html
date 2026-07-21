@@ -1451,8 +1451,12 @@
                         <div class="ring"></div>
                         <div class="ring"></div>
 
-                        <!-- Profile Photo -->
-                        <img id="profilePhoto" src="Anurag.jpg" alt="Anurag" class="hero-photo" />
+                        <!-- Profile Photo – fallback to avatar if image fails -->
+                        <img id="profilePhoto" 
+                             src="Anurag.jpg" 
+                             alt="Anurag" 
+                             class="hero-photo"
+                             onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Anurag&background=6C63FF&color=fff&size=200&font-size=0.5';" />
 
                         <!-- PHOTO UPLOAD BUTTON -->
                         <button class="photo-upload-btn" id="photoUploadBtn" title="Change Profile Photo">
@@ -1611,7 +1615,9 @@
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/anuragbishit/AI-Exam-Analyzer" target="_blank"><i class="fab fa-github"></i> Code</a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://anuragbishit.github.io/AI-Exam-Analyzer" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1633,7 +1639,9 @@
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/anuragbishit/MAP" target="_blank"><i class="fab fa-github"></i> Code</a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1655,7 +1663,9 @@
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/anuragbishit" target="_blank"><i class="fab fa-github"></i> Code</a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1682,13 +1692,13 @@
                     </p>
                 </div>
 
-                <!-- Certification 1: CODSOFT -->
+                <!-- Certification 1: CODSOFT – now links to the local PDF -->
                 <div class="cert-card">
                     <i class="fas fa-certificate"></i>
                     <h4>Front-End Developer Internship</h4>
                     <div class="sub">CODSOFT</div>
                     <div class="date">Jan 2024 – Feb 2024</div>
-                    <a href="http://digil.ink/l/45488H6YHc" target="_blank" class="verify">
+                    <a href="CODSOFT%20CERTIFICATE.pdf" target="_blank" class="verify">
                         <i class="fas fa-check-circle"></i> Verify Certificate
                     </a>
                     <p style="color:var(--text-muted);font-size:0.95rem;margin-top:12px;">
@@ -1696,7 +1706,7 @@
                     </p>
                 </div>
 
-                <!-- NEW: Certification 2 - Hackathon -->
+                <!-- Certification 2: Hackathon -->
                 <div class="cert-card">
                     <i class="fas fa-trophy"></i>
                     <h4>2nd Position – University Hackathon</h4>
@@ -1719,7 +1729,7 @@
             <div class="github-grid">
                 <div class="github-stat-card">
                     <i class="fas fa-code-branch"></i>
-                    <h4>6+</h4>
+                    <h4>11+</h4>
                     <p>Repositories</p>
                 </div>
                 <div class="github-stat-card">
